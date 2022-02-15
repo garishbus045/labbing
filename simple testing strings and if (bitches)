@@ -1,0 +1,21 @@
+bitches_got = "BITCHES OBTAINED!"
+no_bitches = "NO BITCHES?"
+#BITCHES string
+affirmative = ("Yes", "yes", "ye", "Y", "y", "sure", "Sure", "some")
+negative = ("No", "no", "n", "N", "possibly", "Possibly", "nope", "Nope")
+#User imputs string
+question = "Do you have bitches?"
+answer = "No"
+#Question and answers
+print(question)
+print("Answer:",answer)
+
+
+
+if answer in affirmative:
+  print(bitches_got)
+elif answer in negative:
+  print(no_bitches)
+else:
+  print("TELL ME YO' BITCHES, BITCH!")
+#determines bitches output based on answer if it is within the affirmative or negative strings
