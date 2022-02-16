@@ -1,15 +1,19 @@
 # My objective is to make a script that will tell me how many courses I have left when I input a number.
+import random
 question = "How many courses have you completed?"
-answer = ""
+answer = random.randint (0,13)
+answer = str(answer)
 print("Question:", question)
 print("Answer:", answer)
 courses1 = "You have"
 courses2 = "completed. You have"
 courses3 = "to go!"
 courses_completed = "You have completed all courses!"
+
 # Saved data for courses to post how many are left.
 courses_left = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 courses_needed = [13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+# Turning the list into a zip and then a list again. I am unsure of how to add it to the code in a functional way.
 converted_list = zip(courses_left, courses_needed)
 courses_left_and_needed = list(converted_list)
 
@@ -42,5 +46,6 @@ if answer == "12":
   print(courses1, courses_left[12], courses2, courses_needed[12], courses3)
 if answer == "13":
   print(courses_completed)
+# For some reason the else triggers whenever I run it. Is it because of the fact it's a randit and not an actual input?
 else:
   print("Error; please put a number between 1 and 13.")
