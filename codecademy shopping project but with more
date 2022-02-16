@@ -1,0 +1,29 @@
+#Name and description of products
+product_description = [ 
+  ["Lovely Loveseat", "Lovely Loveseat. Tufted polyester blend on wood. 32 inches high x 40 inches wide x 30 inches deep. Red or white."], 
+  ["Stylish Settee", "Stylish Settee. Faux leather on birch. 29.50 inches high x 54.75 inches wide x 28 inches deep. Black."], 
+  ["Luxurious Lamp", "Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade."], 
+  ["Suave Sundress", "Suave Sundress. Polyester. Large. Yellow and white."], 
+  ["Beautiful Blouse", "Beautiful Blouse. Wool. Medium. Green."]
+]
+#Price of products
+product_price = [ 
+  [254.00], 
+  [180.50], 
+  [52.15], 
+  [20.00], 
+  [15.75]
+]
+#Sales tax to be totalled at checkout
+sales_tax = .088
+#First customer's total and items
+customer_one_total = 0
+customer_one_itemization = ""
+#Customer decides to buy the Lovely Loveseat
+customer_one_total += product_price[1]
+customer_one_itemization += product_description[0,1]
+#Customer decides to buy the Beautiful Blouse
+customer_one_total += product_price[-1]
+customer_one_itemization += product_description[4:2]
+
+#Not sure why it's giving me the TypeError but I'll return to this later.
