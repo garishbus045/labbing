@@ -1,0 +1,21 @@
+money_got = "Could I borrow 5 dollars?"
+no_money = "Aw, I needed 5 dollars."
+#MONEY strings
+affirmative = ("Yes", "yes", "ye", "Y", "y", "sure", "Sure", "some")
+negative = ("No", "no", "n", "N", "possibly", "Possibly", "nope", "Nope")
+#User imputs string
+question = "Did you have any money on you?"
+answer = "No"
+#Question and answers
+print(question)
+print("Answer:",answer)
+
+
+
+if answer in affirmative:
+  print(money_got)
+elif answer in negative:
+  print(no_money)
+else:
+  print("Well? Do you have any?")
+#determines money output based on answer if it is within the affirmative or negative strings
