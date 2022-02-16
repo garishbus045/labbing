@@ -1,0 +1,46 @@
+# My objective is to make a script that will tell me how many courses I have left when I input a number.
+question = "How many courses have you completed?"
+answer = ""
+print("Question:", question)
+print("Answer:", answer)
+courses1 = "You have"
+courses2 = "completed. You have"
+courses3 = "to go!"
+courses_completed = "You have completed all courses!"
+# Saved data for courses to post how many are left.
+courses_left = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+courses_needed = [13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+converted_list = zip(courses_left, courses_needed)
+courses_left_and_needed = list(converted_list)
+
+# Responses based on input using saved strings to create a response as well as pulling data from lists.
+if answer == "0":
+  print(courses1, courses_left[0], courses2, courses_needed[0], courses3)
+if answer == "1":
+  print(courses1, courses_left[1], courses2, courses_needed[1], courses3)
+if answer == "2":
+  print(courses1, courses_left[2], courses2, courses_needed[2], courses3)
+if answer == "3":
+  print(courses1, courses_left[3], courses2, courses_needed[3], courses3)
+if answer == "4":
+  print(courses1, courses_left[4], courses2, courses_needed[4], courses3)
+if answer == "5":
+  print(courses1, courses_left[5], courses2, courses_needed[5], courses3)
+if answer == "6":
+  print(courses1, courses_left[6], courses2, courses_needed[6], courses3)
+if answer == "7":
+  print(courses1, courses_left[7], courses2, courses_needed[7], courses3)
+if answer == "8":
+  print(courses1, courses_left[8], courses2, courses_needed[8], courses3)
+if answer == "9":
+  print(courses1, courses_left[9], courses2, courses_needed[9], courses3)
+if answer == "10":
+  print(courses1, courses_left[10], courses2, courses_needed[10], courses3)
+if answer == "11":
+  print(courses1, courses_left[11], courses2, courses_needed[11], courses3)
+if answer == "12":
+  print(courses1, courses_left[12], courses2, courses_needed[12], courses3)
+if answer == "13":
+  print(courses_completed)
+else:
+  print("Error; please put a number between 1 and 13.")
