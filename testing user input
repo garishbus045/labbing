@@ -1,0 +1,20 @@
+today = input("What is today?")
+wrong_day = "No, it's Monday!"
+if today == ("monday", "Monday"):
+  print("That's right! Get ready for school!")
+if today == ("tuesday", "Tuesday"):
+  print(wrong_day)
+if today == ("wednesday", "Wednesday"):
+  print(wrong_day)
+if today == ("thursday", "Thursday"):
+  print(wrong_day)
+if today == ("friday", "Friday"):
+  print(wrong_day)
+if today == ("saturday", "Saturday"):
+  print(wrong_day)
+if today == ("sunday", "Sunday"):
+  print(wrong_day)
+else:
+  print("What?")
+
+#Why is it skipping all the other ifs and going straight to else even when I type in the correct weekdays?
